@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: #f8e9dd;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1440px;
+  height: 100vh;
+  gap: 20px;
+  padding: 20px;
+}
+
+.container header, .container main {
+  width: 400px;
+  padding: 20px 30px;
+  border-radius: 15px;
+}
+
+@media (max-width: 431px) {
+  .container header, .container main {
+    width: 98%;
+    border-radius: 10px;
+    padding: 20px 20px;
+  }
+}
+
+.container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ec775f;
+  color: #fffaf5;
+}
+
+.container header .balance--title {
+  font-size: .6em;
+  font-weight: 400;
+}
+
+.container header .balance--amount {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.container header .logo {
+  position: relative;
+  height: 100%;
+}
+
+.container header .logo .circle1, .container header .logo .circle2 {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  top: 0;
+  bottom: 0;
+  -webkit-transform: translateY(12%);
+          transform: translateY(12%);
+}
+
+.container header .logo .circle1 {
+  border: 2px solid #fffaf5;
+  background-color: transparent;
+  right: 20px;
+  z-index: 1;
+}
+
+.container header .logo .circle2 {
+  border: 2px solid #382314;
+  background-color: #382314;
+  right: 0px;
+}
+
+.container main {
+  background-color: #fffaf5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.container main .title {
+  color: #382314;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.container main .wrapper {
+  border-bottom: 2px solid #f8e9dd;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+}
+
+.container main .wrapper .active .chart__bar {
+  background-color: #76b5bc;
+}
+
+.container main .wrapper .hovered .chart__amount {
+  display: block;
+}
+
+.container main .wrapper .chart {
+  width: 50px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.container main .wrapper .chart:hover .chart__bar {
+  opacity: .8;
+}
+
+.container main .wrapper .chart__amount {
+  display: none;
+  background-color: #382314;
+  width: 100%;
+  padding: 5px 3px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.container main .wrapper .chart__amount h6 {
+  color: #fffaf5;
+  font-size: .5em;
+}
+
+.container main .wrapper .chart__bar {
+  width: 90%;
+  background-color: #ec775f;
+  border-radius: 5px;
+}
+
+.container main .wrapper .chart__day {
+  font-size: .6em;
+  font-weight: 400;
+  color: #93867b;
+  text-transform: lowercase;
+}
+
+.container main .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container main .total .left .total-title {
+  font-size: .65em;
+  font-weight: 400;
+  color: #93867b;
+}
+
+.container main .total .left .total-amount {
+  font-size: 1.7em;
+  font-weight: 700;
+  color: #382314;
+}
+
+.container main .total .right {
+  text-align: right;
+}
+
+.container main .total .right .percentage {
+  font-size: .7em;
+  font-weight: 700;
+  color: #382314;
+}
+
+.container main .total .right .percentage-title {
+  font-size: .65em;
+  font-weight: 400;
+  color: #93867b;
+}

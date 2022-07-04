@@ -1,0 +1,197 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    height: 100vh;
+    gap: 20px;
+    padding: 20px;
+
+    header, main {
+        width: 400px;
+        padding: 20px 30px;
+        border-radius: 15px;
+
+        @media (max-width: 431px) {
+            width: 98%;
+            border-radius: 10px;
+            padding: 20px 20px;
+        }
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $primary;
+        color: $light;
+
+        .balance {
+
+            &--title {
+                font-size: .6em;
+                font-weight: 400;
+            }
+
+            &--amount {
+                font-size: 1.3em;
+                font-weight: 700;
+            }
+        }
+
+        .logo {
+            position: relative;
+            height: 100%;
+
+            .circle1, .circle2 {
+                position: absolute;
+                height: 35px;
+                width: 35px;
+                border-radius: 50%;
+                top: 0;
+                bottom: 0;
+                transform: translateY(12%);
+            }
+            .circle1 {
+                border: 2px solid $light;
+                background-color: transparent;
+                right: 20px;
+                z-index: 1;
+            }
+
+            .circle2 {
+                border: 2px solid $brown;
+                background-color: $brown;
+                right: 0px;
+            }
+        }
+
+    }
+
+
+
+    main {
+        background-color: $light;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .title {
+            color: $brown;
+            font-size: 1.2em;
+            font-weight: 700;
+        }
+
+        .wrapper {
+            border-bottom: 2px solid $bg;
+            padding: 20px 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 10px;
+
+            .active {
+
+                .chart__bar {
+                    background-color: $accent;
+                }
+            }
+
+            .hovered {
+
+                .chart__amount {
+                    display: block;
+                }
+            }
+
+            .chart {
+                width: 50px;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: end;
+                gap: 10px;
+                cursor: pointer;
+                
+                &:hover {
+                    .chart__bar {
+                        opacity: .8;
+                    }
+                }
+
+                &__amount {
+                    display: none;
+                    background-color: $brown;
+                    width: 100%;
+                    padding: 5px 3px;
+                    text-align: center;
+                    border-radius: 5px;
+                    
+                    h6 {
+                        color: $light;
+                        font-size: .5em;
+                    }
+                }
+
+                &__bar {
+                    width: 90%;
+                    background-color: $primary;
+                    border-radius: 5px;
+                }
+
+                &__day {
+                    font-size: .6em;
+                    font-weight: 400;
+                    color: $med-brown;
+                    text-transform: lowercase;
+                }
+            }
+        }
+
+
+
+        .total {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            .left {
+
+                .total-title {
+                    font-size: .65em;
+                    font-weight: 400;
+                    color: $med-brown;
+                }
+
+                .total-amount {
+                    font-size: 1.7em;
+                    font-weight: 700;
+                    color: $brown;
+                }
+            }
+
+
+            .right {
+                text-align: right;
+
+                .percentage {
+                    font-size: .7em;
+                    font-weight: 700;
+                    color: $brown;
+                }
+
+                .percentage-title {
+                    font-size: .65em;
+                    font-weight: 400;
+                    color: $med-brown;
+                }
+            }
+        }
+    }
+
+
+
+}
