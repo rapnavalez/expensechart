@@ -80,9 +80,13 @@
         gap: 20px;
 
         .title {
-            color: $brown;
-            font-size: 1.2em;
-            font-weight: 700;
+
+            h4 {
+                color: $brown;
+                font-size: 1.2em;
+                font-weight: 700;
+            }
+
         }
 
         .wrapper {
