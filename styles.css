@@ -115,7 +115,7 @@ body {
   gap: 20px;
 }
 
-.container main .title h4 {
+.container main .title h3 {
   color: #382314;
   font-size: 1.2em;
   font-weight: 700;
@@ -177,7 +177,7 @@ body {
   border-radius: 5px;
 }
 
-.container main .wrapper .chart__amount h6 {
+.container main .wrapper .chart__amount h4 {
   color: #fffaf5;
   font-size: .5em;
 }

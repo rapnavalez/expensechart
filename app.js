@@ -33,7 +33,7 @@ const charts = document.querySelectorAll('.chart')
 const chartDays = document.querySelectorAll('.chart .chart__day')
 const chartAmount = document.querySelectorAll('.chart .chart__amount')
 const chartBars = document.querySelectorAll('.chart .chart__bar')
-const chartAmountInner = document.querySelectorAll('.chart .chart__amount h6')
+const chartAmountInner = document.querySelectorAll('.chart .chart__amount h4')
 
 
 
