@@ -1,132 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./styles.css">
-  <title>Frontend Mentor | Expenses chart component</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="balance">
+          <h1 class="balance--title">My Balance</h1>
+          <h2 class="balance--amount">$921.48</h2>
+        </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-<div class="container">
-  
-  <header>
-  
-    <div class="balance">
-      <h1 class="balance--title">My Balance</h1>
-      <h2 class="balance--amount">$921.48</h2>
+        <div class="logo">
+          <span class="circle1"></span>
+          <span class="circle2"></span>
+        </div>
+      </header>
+
+      <main>
+        <section class="title">
+          <h3>Spending - Last 7 Days</h3>
+        </section>
+
+        <section class="wrapper">
+          <div class="chart">
+            <div class="chart__amount">
+              <h4></h4>
+            </div>
+            <div class="chart__bar"></div>
+            <h4 class="chart__day"></h4>
+          </div>
+
+          <div class="chart">
+            <div class="chart__amount">
+              <h4></h4>
+            </div>
+            <div class="chart__bar"></div>
+            <h4 class="chart__day"></h4>
+          </div>
+
+          <div class="chart">
+            <div class="chart__amount">
+              <h4></h4>
+            </div>
+            <div class="chart__bar"></div>
+            <h4 class="chart__day"></h4>
+          </div>
+
+          <div class="chart">
+            <div class="chart__amount">
+              <h4></h4>
+            </div>
+            <div class="chart__bar"></div>
+            <h4 class="chart__day"></h4>
+          </div>
+
+          <div class="chart">
+            <div class="chart__amount">
+              <h4></h4>
+            </div>
+            <div class="chart__bar"></div>
+            <h4 class="chart__day"></h4>
+          </div>
+
+          <div class="chart">
+            <div class="chart__amount">
+              <h4></h4>
+            </div>
+            <div class="chart__bar"></div>
+            <h4 class="chart__day"></h4>
+          </div>
+
+          <div class="chart">
+            <div class="chart__amount">
+              <h4></h4>
+            </div>
+            <div class="chart__bar"></div>
+            <h4 class="chart__day"></h4>
+          </div>
+        </section>
+
+        <section class="total">
+          <div class="left">
+            <h3 class="total-title">Total this month</h3>
+            <h2 class="total-amount"></h2>
+          </div>
+
+          <div class="right">
+            <h2 class="percentage">+2.4%</h2>
+            <h3 class="percentage-title">from last month</h3>
+          </div>
+        </section>
+      </main>
+
+      <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Rap Navalez</a>.
+      </footer>
     </div>
-  
-    <div class="logo">
-      <span class="circle1"></span>
-      <span class="circle2"></span>
-    </div>
-  
-  </header>
 
-  <main>
-
-    <section class="title">
-      <h3>Spending - Last 7 Days</h3>
-    </section>
-
-    <section class="wrapper">
-
-      <div class="chart">
-        <div class="chart__amount">
-          <h4></h4>
-        </div>
-        <div class="chart__bar"></div>
-        <h4 class="chart__day"></h4>
-      </div>
-
-      <div class="chart">
-        <div class="chart__amount">
-          <h4></h4>
-        </div>
-        <div class="chart__bar"></div>
-        <h4 class="chart__day"></h4>
-      </div>
-    
-      <div class="chart">
-        <div class="chart__amount">
-          <h4></h4>
-        </div>
-        <div class="chart__bar"></div>
-        <h4 class="chart__day"></h4>
-      </div>
-    
-      <div class="chart">
-        <div class="chart__amount">
-          <h4></h4>
-        </div>
-        <div class="chart__bar"></div>
-        <h4 class="chart__day"></h4>
-      </div>
-    
-      <div class="chart">
-        <div class="chart__amount">
-          <h4></h4>
-        </div>
-        <div class="chart__bar"></div>
-        <h4 class="chart__day"></h4>
-      </div>
-    
-      <div class="chart">
-        <div class="chart__amount">
-          <h4></h4>
-        </div>
-        <div class="chart__bar"></div>
-        <h4 class="chart__day"></h4>
-      </div>
-    
-      <div class="chart">
-        <div class="chart__amount">
-          <h4></h4>
-        </div>
-        <div class="chart__bar"></div>
-        <h4 class="chart__day"></h4>
-      </div>
-
-    </section>
-  
-    <section class="total">
-
-        <div class="left">
-          <h3 class="total-title">
-            Total this month
-          </h3>
-          <h2 class="total-amount">
-          </h2>
-        </div>
-  
-        <div class="right">
-          <h2 class="percentage">+2.4%</h2>
-          <h3 class="percentage-title">from last month</h3>
-        </div>
-
-    </section>
-
-  </main>
-
-</div>
-  
-
-  
-  
-  <Footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Rap Navalez</a>.
-  </Footer>
-
-
-  <script src="./app.js"></script>
-</body>
+    <script src="./app.js"></script>
+  </body>
 </html>

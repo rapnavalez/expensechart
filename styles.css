@@ -11,6 +11,15 @@ body {
   background-color: #f8e9dd;
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,11 +1,19 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'DM Sans', Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    background-color: $bg;
+  font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: $bg;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
